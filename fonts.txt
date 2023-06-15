@@ -1,0 +1,10 @@
+eular
+font-family: 'Open Sans', sans-serif;
+font-family: 'Abril Fatface', cursive;
+font-family: 'Poppins', sans-serif;
+
+banner h1=50
+p=14
+baton=18
+
+maria andrejczyk

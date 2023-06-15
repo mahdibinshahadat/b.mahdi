@@ -1,0 +1,692 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ul,ol{
+    list-style: none;
+}
+a{
+    text-decoration: none !important;
+    display: inline-block;
+}
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+    padding: 0;
+}
+.title span{
+    color: #db1b73;
+    position: relative;
+}
+.title span::before{
+    width: 40px;
+    height: 4px;
+    background: #db1b73;
+    top: 70%;
+    position: absolute;
+    content: '';
+}
+.title span::after{
+    width: 10px;
+    height: 4px;
+    background: #db1b73;
+    top: 70%;
+    position: absolute;
+    content: '';
+}
+.title h2{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+}
+.overlay{
+    width: 100%;
+    height: 100%;
+}
+body{
+    overflow-x: hidden;
+}
+/* =================================================
+nav start
+=================================================== */
+nav{
+    padding: 50px;
+    margin-top: 30px;
+    background: none;
+}
+nav .navbar-brand{
+    font-family: 'Abril Fatface', cursive;
+    font-size: 30px;
+    font-weight: 400;
+    color: #db1b73;
+    text-transform: uppercase;
+}
+nav ul li{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 20px;
+    position: relative;
+    transition: .4s;
+}
+nav ul li a{
+    color: #fff !important;
+}
+nav ul li:hover a{
+    color: #db1b73 !important;
+}
+nav ul li::after{
+    width: 0px;
+    height: 1px;
+    background: #db1b73;
+    position: absolute;
+    top: 80%;
+    left:8%;
+    content: '';
+    opacity: 0;
+    transition: .4s;
+}
+nav ul li:hover::after{
+    width: 50px;
+    opacity: 1;
+}
+nav ul li::before{
+    width: 0px;
+    height: 1px;
+    background: #db1b73;
+    position: absolute;
+    top: 90%;
+    left:8%;
+    content: '';
+    opacity: 0;
+    transition: .4s;
+}
+nav ul li:hover::before{
+    width: 20px;
+    opacity: 1;
+}
+/* =================================================
+nav end
+=================================================== */
+/* =================================================
+banner start
+=================================================== */
+#banner-part{
+    margin-top: -110px;
+    width: 100%;
+    background: url(../images/banner\ .jpg) no-repeat center;
+    background-size: cover;
+}
+#banner-part .overlay{
+    padding-bottom: 5%;
+    background: rgba(0, 0, 0,.5);
+}
+#banner-part .overlay .text h1{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 55px;
+    font-weight: 700;
+    padding-top: 38%;
+    text-transform: uppercase;
+    color: #fff;
+}
+#banner-part .overlay .text p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    padding-top: 2%;
+    line-height: 30px;
+    color: #fff;
+}
+#banner-part .overlay .text .btn{
+    margin-top: 10px;
+    margin-left: -10px;
+
+}
+#banner-part .overlay .text .btn a{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    border: 1px solid #db1b73;
+    color: #db1b73;
+    padding: 8px;
+    transition: .4s;
+    text-transform: uppercase;
+}
+#banner-part .overlay .btn:hover a{
+    background: #db1b73;
+    color: #fff;
+}
+/* =================================================
+banner end
+=================================================== */
+
+/* =============== cunter start ================== */
+#cunter-part{
+    padding-top: 40px;
+    text-align: center;
+    color: #fff;
+}
+#cunter-part .item{
+    background: #db1b73;
+    border-right: 1px solid;
+    padding: 40px;
+}
+#cunter-part .item i{
+    font-size: 50px;
+    padding-bottom: 20px;
+}
+
+#cunter-part .item h2{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 35px;
+    font-weight: 700;
+}
+#cunter-part .item p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+/* =============== cunter start ================== */
+
+/* =================================================
+about start
+=================================================== */
+#about-part{
+    padding: 60px;
+}
+#about-part .img{
+    position: relative;
+}
+#about-part .img img{
+    width: 100%;
+}
+#about-part .img .overlay{
+    background: rgba(0, 0, 0,.3);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#about-part .img .overlay a{
+    display: block;
+    text-align: right;
+    margin-right: 20px;
+}
+#about-part .img .overlay i{
+    width: 50px;
+    height: 50px;
+    background: #db1b73;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    color: #fff;
+    margin-top: 20px;
+}
+#about-part .text h2{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+#about-part .title span::before{
+    left: 102%;
+}
+#about-part .title span::after{
+    left: 116%;
+}
+#about-part .text .mod{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 28px;
+    font-weight: 500;
+    color: #4e4e4e;
+    margin-top: 20px;
+}
+#about-part .text p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: #4e4e4e;
+    width: 746px;
+    margin-top: 15px;
+    line-height: 40px;
+}
+#about-part .text a{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    border: 1px solid #db1b73;
+    color: #db1b73 !important;
+    padding: 8px;
+    transition: .4s;
+    text-transform: uppercase;
+    margin-top: 25px;
+
+}
+#about-part .text a:hover{
+    background: #db1b73;
+    color: #fff !important;
+}
+
+/* =================================================
+about end
+=================================================== */
+
+/* ============== album-slider-part ================ */
+#album-slider-part .title{
+    text-align: center;
+}
+#album-slider-part span::before{
+    left: 102%;
+}
+#album-slider-part span::after{
+    left: 139%;
+}
+#album-slider-part .title p{
+    color: #4e4e4e;
+}
+#album-slider-part .album-slider{
+    margin: 60px 0;
+}
+#album-slider-part .album-slider .album img{
+    width: 100%;
+}
+/* ============== album-slider-part ================ */
+
+/* ================ work start ===================== */
+#work-part{
+    width: 100%;
+    background: url(../images/work\ back.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#work-part .overlay{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0,.7);
+    padding: 100px;
+}
+#work-part .overlay h2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 52px;
+    font-weight: 600;
+    color: #db1b73;
+    margin-bottom: 15px;
+}
+#work-part .overlay p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+    color: #fff;
+    margin-top: 10px;
+}
+#work-part .overlay .btn a{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #db1b73;
+    border: 1px solid #db1b73;
+    padding: 10px;
+    transition: .4s;
+    margin-top: 40px;
+}
+#work-part .btn a:hover{
+    background: #db1b73;
+    color: #fff;
+}
+/* =================== work end ========================= */
+
+/* ================== service start ======================= */
+#service-part{
+    width: 100%;
+    margin-top: -10px;
+    text-align: center;
+    padding: 60px;
+}
+#service-part span::before{
+    left: 102%;
+}
+#service-part span::after{
+    left: 136%;
+}
+#service-part .title p{
+    color: #4e4e4e;
+    margin-bottom: 50px;
+}
+#service-part .item{
+    border: 1px solid #f0f0f0;
+    background: #fff;
+    border-radius: 15px;
+    margin-top: 20px;
+    margin-left: 20px;
+    padding-top: 20px;
+    transition: .4s;
+}
+#service-part .item:hover{
+    border: 1px solid #db1b73;
+}
+#service-part .item i{
+    padding-bottom: 30px; 
+}
+#service-part .item .btn{
+    width: 60px;
+    height: 60px;
+    background: #db1b73;
+    border-radius: 50%;
+    line-height: 46px;
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+}
+#service-part .item h2{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    margin-top: 18px;
+}
+#service-part .item p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    color: #666;
+}
+/* ================== service end ========================= */
+/* ================== medal start ========================= */
+#masage{
+    width: 100%;
+    background: url(../images/back.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#masage .overlay{
+    width: 100%;
+    height: 100%;
+    padding: 80px;
+    background: rgba(0, 0, 0,.8);
+}
+#masage h2{
+    font-family: 'Poppins', sans-serif;
+    font-size: 42px;
+    font-weight: 600;
+    color: #db1b73;
+    margin: 20px 0;
+}
+#masage p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    line-height: 1.8;
+    color: white;
+    margin-bottom: 40px;
+}
+#masage .btn{
+    margin-left: -13px;
+}
+#masage .btn:hover a{
+    color: white;
+    background: #db1b73;
+}
+#masage a{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    color: #db1b73;
+    border: 1px solid #db1b73;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 50px;
+    padding: 0px 47px;
+    transition: .4s;
+}
+#masage ul{
+    position: relative;
+    margin-top: 35px;
+}
+#masage ul h3{
+    color: #db1b73;
+}
+#masage ul li{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: #db1b73;
+    margin-left: 40px;
+}
+#masage ul li::before {
+	width: 19px;
+	height: 1px;
+	background: #db1b73;
+	position: absolute;
+	content: '';
+	margin-left: -37px;
+	margin-top: 12px;
+}
+
+/* ================== medal end ========================= */
+/* =========================================================
+     portpolio start
+============================================================ */
+#portfolio-part{
+    width: 100%;
+    padding: 60px;
+    background: #fbfbfb;
+}
+#portfolio-part .title{
+    text-align: center;
+}
+#portfolio-part span::before{
+    left: 102%;
+}
+#portfolio-part span::after{
+    left: 129%;
+}
+#portfolio-part .title p{
+    color: #4e4e4e;
+    margin-bottom: 50px;
+}
+#portfolio-part .item{
+    width: 100%;
+    transition: .4s;
+}
+#portfolio-part .item img{
+    width: 100%;
+}
+#portfolio-part .row > * {
+	padding-right: calc(var(--bs-gutter-y) * .5);
+	padding-left: calc(var(--bs-gutter-y) * .5);
+}
+#portfolio-part .item:hover{
+    box-shadow: 0px 0px 28px 1px rgba(0,0,0,0.75);
+-webkit-box-shadow: 0px 0px 28px 1px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 28px 1px rgba(0,0,0,0.75);
+}
+/* =========================================================
+     portpolio end
+============================================================ */
+/* =========================================================
+     blog start
+============================================================ */
+#blog-part{
+    width: 100%;
+    padding: 50px;
+    background: #f0f0f0;
+}
+#blog-part .title{
+    text-align: center;
+}
+#blog-part .title span::before{
+    left: 102%;
+}
+#blog-part .title span::after{
+    left: 156%;
+}
+#blog-part .title p{
+    color: #4e4e4e;
+    margin-bottom: 60px;
+}
+#blog-part .item{
+    margin-left: 20px;
+    box-shadow: 0px 2px 6px -1px rgba(0,0,0,0.75);
+-webkit-box-shadow: 0px 2px 6px -1px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 2px 6px -1px rgba(0,0,0,0.75);
+}
+#blog-part .item img{
+    width: 100%;
+}
+#blog-part .item .text h2{
+    padding-top: 20px;
+    margin-left: 20px;
+    color: #db1b73;
+}
+#blog-part .item .text p{
+    color: #4e4e4e;
+    line-height: 30px;
+    font-size: 20px;
+    margin-left: 20px;
+    padding-bottom: 18px;  
+}
+#blog-part .item .btm{
+    color: #fff;
+    background: #db1b73;
+    padding: 20px;
+}
+#blog-part .item .btm i{
+    margin-left: 20px;
+    font-size: 20px;
+}
+/* =========================================================
+     blog end
+============================================================ */
+/* =========================================================
+     contact start
+============================================================ */
+#contact-part{
+    width: 100%;
+    background: url(../images/model.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#contact-part .overlay{
+    width: 100%;
+    padding: 60px;
+    background: rgba(0, 0, 0,.5);
+}
+#contact-part .title{
+    padding-top: 30px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+#contact-part .title h2{
+    color: #fff;
+}
+#contact-part .title span::before{
+    left: 104%;
+}
+#contact-part .title span::after{
+    left: 136%;
+}
+#contact-part .title p{
+    color: #fff;
+}
+#contact-part form{
+    margin-top: 40px;
+}
+#contact-part .main input{
+    width: 48%;
+    padding: 15px;
+    margin-right: 5px;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+#contact-part .website input{
+    width: 97%;
+    padding: 15px;
+    margin-top: 20px;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+#contact-part .masage textarea{
+    width: 97%;
+    height: 200px;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    resize: none;
+}
+#contact-part form ::placeholder{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+#contact-part form a{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    background: #db1b73;
+    color: #fff;
+    padding: 10px;
+    border-radius: 7px;
+}
+#contact-part .adders{
+    width: 100%;
+    margin-top: 30px;
+    background: #b7205b;
+    padding-bottom: 60px;
+}
+#contact-part .adders h2{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    color: white;
+    padding-top: 50px;
+    margin-left: 15px;
+}
+#contact-part .item{
+    margin-top: 35px;
+    margin-left: 15px;
+    color: white;
+}
+#contact-part .item i{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+#contact-part .item h2{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+}
+#contact-part .item p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+}
+/* =========================================================
+     contact start
+============================================================ */
+footer{
+    width: 100%;
+    padding: 10px;
+    background: #db1b73;
+    color: white;
+}
+footer .text{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+footer .icon{
+    margin-top: 12px;
+    text-align: right;
+}
+footer .icon a{
+    margin-left: 20px;
+    font-size: 30px;
+    color: white;
+}
+/* =========================================================
+     contact end
+============================================================ */
